@@ -5,6 +5,7 @@ function conexion() {
 function obtenerSheet(NAME) {
   return conexion().getSheetByName(NAME);
 }
+
 function obtenerDatos(NAME) {
-  return obtenerSheet(NAME).getDataRange().getDisplayValue();
+  return obtenerSheet(NAME).getDataRange().getDisplayValues();
 }
